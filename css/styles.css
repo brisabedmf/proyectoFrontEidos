@@ -90,8 +90,10 @@ h1,h2 {
     /*width:300px;
     height:300px;*/
     width: 40vw; /* 40% */
+    max-width: 150px;
     height: 35vh; /* 20% */
-    border-radius:120vw;
+    max-height: 150px;
+    border-radius:100px; /*120vw*/
     border:1vw none black;
 }
 
@@ -101,7 +103,9 @@ h1,h2 {
 
 .iconos img {
     width:15vw;
+    max-width: 50px;
     height: 12vh;
+    max-height: 50px;
     margin-right: 6vw;
 }
 
@@ -136,6 +140,7 @@ footer{
     background-color: #af599e;
     width: 100%;
     height: 100%;
+    /*margin-bottom: 0px;*/
 }
 
 #parrafo-footer {
