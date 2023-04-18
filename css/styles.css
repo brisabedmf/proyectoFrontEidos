@@ -21,6 +21,9 @@
     font-family: 'Quicksand', sans-serif;
     font-family: 'Raleway', sans-serif;
 
+    color: #0f0f0f;
+    font-size: 18px;
+
     /*background-color:#fbfbfb;*/
 }
 
@@ -82,6 +85,10 @@ h1,h2 {
     padding: 1.5vh 1vw;
 }
 
+section {
+    min-height: 100vh;
+}
+
 #descargar-cv {
     margin-top: 3vh;
 }
@@ -89,11 +96,13 @@ h1,h2 {
 #redondeada {
     /*width:300px;
     height:300px;*/
-    width: 40vw; /* 40% */
+    width: 25vw; /* 40% */
     max-width: 150px;
-    height: 35vh; /* 20% */
+    min-width: 50px;
+    height: 30vh; /* 20% */
     max-height: 150px;
-    border-radius:100px; /*120vw*/
+    min-height: 100px;
+    border-radius:80vh; /*120vw*/
     border:1vw none black;
 }
 
@@ -114,8 +123,8 @@ h1,h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
-    margin-bottom: 15vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .info-contacto {
@@ -129,12 +138,15 @@ h1,h2 {
 #descargar-cv {
     background-color: #af599e;
     width: 40%;
+    max-width: 300px;
     height: 6vh;
     border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding-top: 1vh;
-    text-align: center;
 }
+
 
 footer{
     background-color: #af599e;
