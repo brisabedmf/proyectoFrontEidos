@@ -85,17 +85,13 @@ section {
     min-height: 100vh;
 }
 
-#descargar-cv {
-    margin-top: 3vh;
-}
-
 #redondeada {
     width: 25vw;
-    max-width: 150px;
-    min-width: 100px;
+    max-width: 200px;
+    min-width: 180px;
     height: 30vh;
-    max-height: 150px;
-    min-height: 100px;
+    max-height: 200px;
+    min-height: 180px;
     border-radius:50%;
     border:1vw none black;
 }
@@ -137,6 +133,7 @@ section {
     align-items: center;
     justify-content: center;
     color: white;
+    margin-top: 3vh;
 }
 
 
