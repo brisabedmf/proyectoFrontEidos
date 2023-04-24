@@ -1,12 +1,7 @@
-/* En este archivo escriban su CSS */
-
 /* Fonts */
-/* Importar aquí la font */
+
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=Lato:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
 
 /* Reset */
 * {
@@ -24,7 +19,6 @@
     color: #0f0f0f;
     font-size: 18px;
 
-    /*background-color:#fbfbfb;*/
 }
 
 /* Para quitar los puntos a los items de listas */
@@ -41,10 +35,14 @@ a {
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
+body{
+    background-color:#fbfbfb;
+    width: 100%;
+}
+
 main {
     max-width: 1200px;
     margin: auto;
-    background-color:#fbfbfb;
 }
 
 header {
@@ -52,7 +50,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:#fbfbfb;
 }
 
 .enlaces {
@@ -93,15 +90,13 @@ section {
 }
 
 #redondeada {
-    /*width:300px;
-    height:300px;*/
-    width: 25vw; /* 40% */
+    width: 25vw;
     max-width: 150px;
     min-width: 50px;
-    height: 30vh; /* 20% */
+    height: 30vh;
     max-height: 150px;
     min-height: 100px;
-    border-radius:80vh; /*120vw*/
+    border-radius:50%;
     border:1vw none black;
 }
 
@@ -149,69 +144,9 @@ footer{
     background-color: #af599e;
     width: 100%;
     height: 100%;
-    /*margin-bottom: 0px;*/
 }
 
 #parrafo-footer {
     color: white;
     text-align: center;
 }
-
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
-
-
-/*
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
-Display:
-• block: el elemento ocupa el 100% del espacio
-horizontal disponible, generando un salto de línea
-con respecto a los elementos que lo rodean. Se le
-pueden aplicar width, height, padding y margin. Valor
-por defecto en <p>, <h1>...<h6>, <div>
-• inline: ocupa solo el espacio de su contenido, no
-genera un salto de línea. No se le aplican width o
-height, y padding o margin solo se le aplican en
-sentido horizontal. Valor por defecto en <a>
-• inline-block: funcionan como el display inline, pero
-se le pueden aplicar width, height, padding y
-margin. Valor por defecto en <img>
-
-
-Propiedades Flexbox
-Las propiedades y valores que conoceremos son:
-Propiedad Valores
-display flex
-flex-direction row ó column
-justify-content center / flex-start / flex-end / space-around
-/ space-between / space-evenly
-align-items center / flex-start / flex-end
-
-
-Con la propiedad justify-content
-organizaremos los elementos en el eje
-principal y con la propiedad
-align-items sobre el eje secundario.
-
-*/
